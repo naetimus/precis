@@ -1,3 +1,2 @@
-web:python application.py
-web: gunicorn gettingstarted.wsgi --log-file -
+web: python application.py
 heroku ps:scale web=1
