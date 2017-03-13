@@ -2,7 +2,6 @@ from flask import Flask, render_template, request
 import precis.textrank
 import json
 
-# Elastic Beanstalk initalization
 from precis import textrank
 
 application = Flask(__name__)
