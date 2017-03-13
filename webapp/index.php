@@ -1,4 +1,4 @@
-<?php header( 'Location: /index.php' ) ;  ?>
+<?php include_once("home.html"); ?>
 <!DOCTYPE HTML>
 <html>
    <head>
