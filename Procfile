@@ -1,3 +1,3 @@
 web: python application.py
-web: gunicorn intro_to_flask:app
+web: gunicorn precis:app
 heroku ps:scale web=1
