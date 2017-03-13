@@ -1,3 +1,3 @@
 web: python application.py
-web: gunicorn precis:app
+web: gunicorn application:app
 heroku ps:scale web=1
