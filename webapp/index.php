@@ -59,11 +59,9 @@
             type: "POST",
             url: "https://precis.herokuapp.com/summary",
             timeout: 2000,
+            data: JSON.stringify({'text': 'bar'}),
             dataType: 'json',
             contentType: 'application/json',
-            data: {data: JSON.stringify({ 
-               'text': 'bar'
-            })},
             success: function(data) {
                 //show content
                 alert('Success!');
