@@ -52,8 +52,6 @@
                return data;
             },
             error: function(xhr, ajaxOptions, thrownError) {
-               var err = eval("(" + xhr.responseText + ")");
-               alert(err.Message);
                alert('Error occured');
             }
          });
