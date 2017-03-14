@@ -53,6 +53,7 @@
             },
             error: function(xhr, ajaxOptions, thrownError) {
                alert('Error occured');
+               alert('xhr.responseText');
             }
          });
         }
