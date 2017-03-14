@@ -52,6 +52,8 @@
                return data;
             },
             error: function() {
+               var err = eval("(" + xhr.responseText + ")");
+               alert(err.Message);
                alert('Error occured');
             }
          });
