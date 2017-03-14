@@ -62,7 +62,7 @@
             data: { 
                'foo': 'bar', 
                'ca$libri': 'no$libri' // <-- the $ sign in the parameter name seems unusual, I would avoid it
-            }
+            },
             success: function(data) {
                 //show content
                 alert('Success!');
