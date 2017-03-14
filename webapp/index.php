@@ -43,7 +43,7 @@
             $.ajax({
                type: "POST",
                url: 'https://precis.herokuapp.com/summary',
-               data: {'text':'I want to express keen interest in joining esteemed computer science program of your university as a postgraduate student.'},
+               data: "Shubham",
                dataType: "json",
                contentType: "application/json",
                success: function(data) {
