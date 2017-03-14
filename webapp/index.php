@@ -8,9 +8,9 @@
       <meta name="description" content="Online Automatic Text Summarization - Precis is a simple tool that help to summarize large text documents and split from the most important sentences.">
       <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+      <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
       <script src="js/skel.min.js"></script>
       <script src="js/skel-panels.min.js"></script>
       <script src="js/init.js"></script>
