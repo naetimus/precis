@@ -40,21 +40,35 @@
             //This performs a POST-Request.
             //Use "$.get();" in order to perform a GET-Request (you have to take a look in the rest-API-documentation, if you're unsure what you need)
             //The Browser downloads the webpage from the given url, and returns the data.
+         //    $.ajax({
+         //       type: "POST",
+         //       url: 'https://precis.herokuapp.com/summary',
+         //       dataType: "json",
+         //       data: {'name': 'John'},
+         //       success: function(data) {
+         //       // Run the code here that needs
+         //       //    to access the data returned
+         //       alert(data);
+         //       return data;
+         //    },
+         //    error: function(xhr, ajaxOptions, thrownError) {
+         //       alert('Error occured');
+         //       alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);            }
+         // });
             $.ajax({
-               type: "POST",
-               url: 'https://precis.herokuapp.com/summary',
-               dataType: "json",
-               data: {'name': 'John'},
-               success: function(data) {
-               // Run the code here that needs
-               //    to access the data returned
-               alert(data);
-               return data;
+            type: "POST",
+            url: "https://precis.herokuapp.com/summary",
+            timeout: 2000,
+            data: { image: "/static/images/apples.jpeg", text: "apples" },
+            success: function(data) {
+                //show content
+                alert('Success!')
             },
-            error: function(xhr, ajaxOptions, thrownError) {
-               alert('Error occured');
-               alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);            }
-         });
+            error: function(jqXHR, textStatus, err) {
+                //show error message
+                alert('text status '+textStatus+', err '+err)
+            }
+        });
         }
     </script>
       <style>
