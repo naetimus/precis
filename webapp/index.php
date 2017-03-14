@@ -22,16 +22,28 @@
          (
          function(i,s,o,g,r,a,m)
          {i['GoogleAnalyticsObject']=r;i[r]=i[r]||
-         	
-         	function(){
-         	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-         	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            
+            function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
          
          ga('create', 'UA-46290758-1', 'autosummarizer.com');
          ga('send', 'pageview');
          
       </script>
+      <script>
+        //Usually, you put script-tags into the head
+        function myFunction() {
+            //This performs a POST-Request.
+            //Use "$.get();" in order to perform a GET-Request (you have to take a look in the rest-API-documentation, if you're unsure what you need)
+            //The Browser downloads the webpage from the given url, and returns the data.
+            $.post( "https://precis.herokuapp.com/summary", function( data ) {
+                 //As soon as the browser finished downloading, this function is called.
+                 $('#styled').html(data);
+            });
+        }
+    </script>
       <style>
          .beta
          {
@@ -65,7 +77,7 @@
                </a>
                <h3>Start generating your online summary</h3>
             </header>
-            <form  method='POST' action='index.php'>
+            <form onsubmit="return myFunction()" method='POST' action='index.php'>
                <style>
                   textarea#styled {
                   width: 60%;
@@ -75,10 +87,10 @@
                   }
                </style>
                <textarea  name="text" placeholder="Paste your text article and click Summarize.. " id="styled">
-											</textarea>
+                                 </textarea>
                <script>
                   function clear_textarea() {
-                  	document.getElementById("styled").value = "";
+                     document.getElementById("styled").value = "";
                   }
                   
                </script>
@@ -99,9 +111,9 @@
          <script></script>
          <script>
             $( "#smm" ).click(function() {
-            	$( "#position" ).hide( "slow", function() {
-            		
-            	});
+               $( "#position" ).hide( "slow", function() {
+                  
+               });
             });
          </script>
          <div id="position"><b>
