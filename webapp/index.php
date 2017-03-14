@@ -69,7 +69,6 @@
                 alert('text status '+textStatus+', err '+err);
             }
         });
-}
         }
     </script>
       <style>
