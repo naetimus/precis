@@ -59,7 +59,7 @@
             type: "POST",
             url: "https://precis.herokuapp.com/summary",
             timeout: 2000,
-            data: 'dsadasads',
+            data: 'foo=bar&ca$libri=no$libri',
             success: function(data) {
                 //show content
                 alert('Success!');
