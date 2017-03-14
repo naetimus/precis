@@ -40,11 +40,10 @@
             //This performs a POST-Request.
             //Use "$.get();" in order to perform a GET-Request (you have to take a look in the rest-API-documentation, if you're unsure what you need)
             //The Browser downloads the webpage from the given url, and returns the data.
-            var data1 = {text:"I want to express keen interest in joining esteemed computer science program of your university as a postgraduate student."}
             $.ajax({
                type: "POST",
                url: 'https://precis.herokuapp.com/summary',
-               data: data1,
+               data: {"text":"I want to express keen interest in joining esteemed computer science program of your university as a postgraduate student."},
                dataType: "json",
                success: function(data) {
                // Run the code here that needs
