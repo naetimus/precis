@@ -2,6 +2,7 @@ import os
 from flask import Flask, render_template, request
 import precis.textrank
 import json
+from flask_cors import CORS, cross_origin
 
 from precis import textrank
 
@@ -9,7 +10,7 @@ application = Flask(__name__)
 application.debug=True
 
 @application.route('/summary', methods=['POST'])
-@crossdomain(origin='*')
+@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def index():
     try:
         print request.method
