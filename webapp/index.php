@@ -44,7 +44,7 @@
                type: "POST",
                url: 'https://precis.herokuapp.com/summary',
                dataType: "json",
-               data: {name: 'John'},
+               data: {'name': 'John'},
                success: function(data) {
                // Run the code here that needs
                //    to access the data returned
