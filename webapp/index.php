@@ -10,6 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
       <script src="js/skel.min.js"></script>
       <script src="js/skel-panels.min.js"></script>
       <script src="js/init.js"></script>
@@ -112,7 +113,6 @@
                <input type='submit' class="pure-button pure-button-active" id='smm2' name='submit' value='Summarize'>
          </div>
          </form>
-         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
          <style>
             #position {
             width:60%;
@@ -141,15 +141,6 @@
             text-align:left;
             }
          </style>
-         <center>
-         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-         <ins class="adsbygoogle"
-            style="display:inline-block;width:728px;height:90px"
-            data-ad-client="ca-pub-9062148254082378"
-            data-ad-slot="8085339247"></ins>
-         <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-         </script>
          <center>
          <p></p>
          <hr />
