@@ -59,7 +59,7 @@
             type: "POST",
             url: "https://precis.herokuapp.com/summary",
             timeout: 2000,
-            data: { image: "/static/images/apples.jpeg", text: "apples" },
+            data: 'dsadasads',
             success: function(data) {
                 //show content
                 alert('Success!');
