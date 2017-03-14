@@ -61,9 +61,9 @@
             timeout: 2000,
             dataType: 'json',
             contentType: 'application/json',
-            data: { 
+            data: {data: JSON.stringify({ 
                'text': 'bar'
-            },
+            })},
             success: function(data) {
                 //show content
                 alert('Success!');
