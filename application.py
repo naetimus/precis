@@ -8,6 +8,7 @@ from precis import textrank
 
 application = Flask(__name__)
 application.debug=True
+CORS(application)
 
 @application.route('/summary', methods=['POST'])
 @cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
