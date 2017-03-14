@@ -45,6 +45,7 @@
                url: 'https://precis.herokuapp.com/summary',
                data: {'text':'I want to express keen interest in joining esteemed computer science program of your university as a postgraduate student.'},
                dataType: "json",
+               contentType: "application/json",
                success: function(data) {
                // Run the code here that needs
                //    to access the data returned
