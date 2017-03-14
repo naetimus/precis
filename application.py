@@ -9,6 +9,7 @@ application = Flask(__name__)
 application.debug=True
 
 @application.route('/summary', methods=['POST'])
+@crossdomain(origin='*')
 def index():
     try:
         print request.method
