@@ -9,7 +9,7 @@
       <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
       <script src="js/skel.min.js"></script>
       <script src="js/skel-panels.min.js"></script>
@@ -36,7 +36,7 @@
       <script>
         //Usually, you put script-tags into the head
         function myFunction() {
-            alert("Shubham")
+            alert("Shubham");
             //This performs a POST-Request.
             //Use "$.get();" in order to perform a GET-Request (you have to take a look in the rest-API-documentation, if you're unsure what you need)
             //The Browser downloads the webpage from the given url, and returns the data.
@@ -48,7 +48,7 @@
                success: function(data) {
                // Run the code here that needs
                //    to access the data returned
-               alert(data)
+               alert(data);
                return data;
             },
             error: function() {
