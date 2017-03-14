@@ -14,6 +14,7 @@ application.debug=True
 def index():
     try:
         print request.method
+        print request
         if request.method == "POST":
             print request.data
             json_dict = json.loads(request.data)
