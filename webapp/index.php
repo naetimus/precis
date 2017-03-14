@@ -62,8 +62,7 @@
             dataType: 'json',
             contentType: 'application/json',
             data: { 
-               'text': 'bar', 
-               'calibri': 'nolibri' // <-- the $ sign in the parameter name seems unusual, I would avoid it
+               'text': 'bar'
             },
             success: function(data) {
                 //show content
