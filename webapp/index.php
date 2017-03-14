@@ -55,20 +55,21 @@
          //       alert('Error occured');
          //       alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);            }
          // });
-            $.ajax({
+              $.ajax({
             type: "POST",
             url: "https://precis.herokuapp.com/summary",
             timeout: 2000,
             data: { image: "/static/images/apples.jpeg", text: "apples" },
             success: function(data) {
                 //show content
-                alert('Success!')
+                alert('Success!');
             },
             error: function(jqXHR, textStatus, err) {
                 //show error message
-                alert('text status '+textStatus+', err '+err)
+                alert('text status '+textStatus+', err '+err);
             }
         });
+}
         }
     </script>
       <style>
