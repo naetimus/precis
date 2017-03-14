@@ -11,7 +11,6 @@ application.debug=True
 CORS(application)
 
 @application.route('/summary', methods=['POST'])
-@cross_origin(origin='localhost',headers=['Content- Type','Authorization'])
 def index():
     try:
         print request.method
