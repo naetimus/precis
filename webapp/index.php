@@ -53,8 +53,7 @@
             },
             error: function(xhr, ajaxOptions, thrownError) {
                alert('Error occured');
-               alert('xhr.responseText');
-            }
+               alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);            }
          });
         }
     </script>
