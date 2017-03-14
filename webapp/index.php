@@ -60,11 +60,7 @@
             url: "https://precis.herokuapp.com/summary",
             timeout: 2000,
             dataType: 'json',
-            contentType: 'application/json',
-            data: { 
-               'foo': 'bar', 
-               'ca$libri': 'no$libri' // <-- the $ sign in the parameter name seems unusual, I would avoid it
-            },
+            data: {'text': 'Shubham is a great boy.'},
             success: function(data) {
                 //show content
                 alert('Success!');
