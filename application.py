@@ -11,6 +11,7 @@ application.debug=True
 @application.route('/summary', methods=['POST'])
 def index():
     try:
+        print request.method
         if request.method == "POST":
             print request.data
             json_dict = json.loads(request.data)
