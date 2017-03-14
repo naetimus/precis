@@ -43,9 +43,8 @@
             $.ajax({
                type: "POST",
                url: 'https://precis.herokuapp.com/summary',
-               data: "Shubham",
                dataType: "json",
-               contentType: "application/json",
+               data: {name: 'John'},
                success: function(data) {
                // Run the code here that needs
                //    to access the data returned
