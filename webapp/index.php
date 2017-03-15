@@ -55,6 +55,7 @@
             error: function(xhr, textStatus, err) {
                alert(xhr.responseText);
                 alert('text status '+textStatus+', err '+err);
+                return false;
             }
         });
         }
