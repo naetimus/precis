@@ -6,10 +6,11 @@
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <meta name="keywords" content="online symmary, text summarization tool, automatic text summary, text mining, text summarizer, text summary, auto summarizer, automatic text summarizer, free summarizer, summarize text, summary generator, text summary, online text summarization, summarizer, summary, summarize, article summarizer, ariticle summarization">
       <meta name="description" content="Online Automatic Text Summarization - Precis is a simple tool that help to summarize large text documents and split from the most important sentences.">
-      <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+      <link rel="stylesheet" href="//yui.yahooapis.com/pure/0.5.0/pure-min.css">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <link href='//fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
       <script src="js/skel.min.js"></script>
       <script src="js/skel-panels.min.js"></script>
       <script src="js/init.js"></script>
@@ -35,13 +36,40 @@
       <script>
         //Usually, you put script-tags into the head
         function myFunction() {
+            alert("Shubham");
             //This performs a POST-Request.
             //Use "$.get();" in order to perform a GET-Request (you have to take a look in the rest-API-documentation, if you're unsure what you need)
             //The Browser downloads the webpage from the given url, and returns the data.
-            $.post( "https://precis.herokuapp.com/summary", function( data ) {
-                 //As soon as the browser finished downloading, this function is called.
-                 $('#styled').html(data);
-            });
+         //    $.ajax({
+         //       type: "POST",
+         //       url: 'https://precis.herokuapp.com/summary',
+         //       dataType: "json",
+         //       data: {'name': 'John'},
+         //       success: function(data) {
+         //       // Run the code here that needs
+         //       //    to access the data returned
+         //       alert(data);
+         //       return data;
+         //    },
+         //    error: function(xhr, ajaxOptions, thrownError) {
+         //       alert('Error occured');
+         //       alert('Request Status: ' + xhr.status + ' Status Text: ' + xhr.statusText + ' ' + xhr.responseText);            }
+         // });
+              $.ajax({
+            type: "POST",
+            url: "https://precis.herokuapp.com/summary",
+            timeout: 2000,
+            dataType: 'json',
+            data: {'text': 'Shubham is a great boy.'},
+            success: function(data) {
+                //show content
+                alert('Success!');
+            },
+            error: function(jqXHR, textStatus, err) {
+                //show error message
+                alert('text status '+textStatus+', err '+err);
+            }
+        });
         }
     </script>
       <style>
@@ -100,7 +128,6 @@
                <input type='submit' class="pure-button pure-button-active" id='smm2' name='submit' value='Summarize'>
          </div>
          </form>
-         <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
          <style>
             #position {
             width:60%;
@@ -129,15 +156,6 @@
             text-align:left;
             }
          </style>
-         <center>
-         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-         <ins class="adsbygoogle"
-            style="display:inline-block;width:728px;height:90px"
-            data-ad-client="ca-pub-9062148254082378"
-            data-ad-slot="8085339247"></ins>
-         <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-         </script>
          <center>
          <p></p>
          <hr />
