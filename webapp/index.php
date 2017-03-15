@@ -50,7 +50,8 @@
                 //show content
                 alert('Success!');
                 alert(JSON.stringify(data, null, 2))
-                document.getElementById('position').b.innerHTML = JSON.stringify(data, null, 2);
+                document.getElementById('position').innerHTML = JSON.stringify(data, null, 2);
+                document.getElementById('position').display = 'inline';
                 return true;
             },
             error: function(xhr, textStatus, err) {
@@ -134,8 +135,7 @@
                });
             });
          </script>
-         <div id="position"><b>
-            </b>
+         <div id="position">
          </div>
          <br>
          <br>
