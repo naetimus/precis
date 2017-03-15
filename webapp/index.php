@@ -52,6 +52,9 @@
                 alert(JSON.stringify(data, null, 2))
                 document.getElementById('position').innerHTML = JSON.stringify(data, null, 2);
                 document.getElementById('position').display = 'inline';
+                $( "#position" ).show( "slow", function() {
+                  
+               });
                 return true;
             },
             error: function(xhr, textStatus, err) {
