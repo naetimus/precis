@@ -54,7 +54,7 @@
             },
             error: function(jqXHR, textStatus, err) {
                 //show error message
-                console.log(error);
+                console.log(err);
                 alert('text status '+textStatus+', err '+err);
             }
         });
