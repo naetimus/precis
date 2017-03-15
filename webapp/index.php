@@ -50,6 +50,7 @@
             success: function(data) {
                 //show content
                 alert('Success!');
+                alert(JSON.stringify(data, null, 2);)
                 alert(data);
             },
             error: function(jqXHR, textStatus, err) {
