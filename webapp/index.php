@@ -50,7 +50,7 @@
                 //show content
                 alert('Success!');
                 alert(JSON.stringify(data, null, 2))
-                return false;
+                return true;
             },
             error: function(xhr, textStatus, err) {
                alert(xhr.responseText);
