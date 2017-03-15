@@ -58,6 +58,8 @@
                 return true;
             }
         });
+        
+        return false;
         }
     </script>
       <style>
