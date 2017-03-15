@@ -36,35 +36,28 @@
       <script>
         //Usually, you put script-tags into the head
         function myFunction() {
-            alert("Shubham");
-            //This performs a POST-Request.
-            //Use "$.get();" in order to perform a GET-Request (you have to take a look in the rest-API-documentation, if you're unsure what you need)
-            //The Browser downloads the webpage from the given url, and returns the data.
-              $.ajax({
-            type: "POST",
-            url: "https://precis.herokuapp.com/summary",
-            data: JSON.stringify({'text': 'I want to express keen interest in joining esteemed computer science program of your university as a postgraduate student. I have completed four years’ undergraduate course in Computer Science and Engineering at one of the most reputed colleges of India, ISM Dhanbad, and worked for two and half years in two reputed technology companies - Yahoo Inc. and Flipkart. After excelling in academic courses and applying those concepts in real life as a professional, I gained knowledge in multiple fields of computer science. However, during last three years, I realized the importance of focus and specialization which led me to my decision of pursuing higher studies. The postgraduate program at your university enthused me with eminent faculty and strong research capabilities. I believe a post graduate course at University of Wisconsin-Madison will take me to the next level in my career. I have a strong interest in Mathematics right from my childhood years. Probably, I got it from my father. My father is a civil engineer with keen interest in Mathematics who instilled the same aptitude in me. I got introduced to programming in 9th standard where my curriculum included C++. I spent hours imagining various applications of the programming which raised lot questions in my mind.'}),
-            // dataType: 'json',
-            contentType: 'application/json; charset=UTF-8',
-            success: function(data) {
-                //show content
-                alert('Success!');
-                alert(JSON.stringify(data, null, 2))
-                document.getElementById('position').innerHTML = JSON.stringify(data, null, 2);
-                document.getElementById('position').display = 'inline';
-                $( "#position" ).show( "slow", function() {
-                  
-               });
-                return true;
-            },
-            error: function(xhr, textStatus, err) {
-               alert(xhr.responseText);
-                alert('text status '+textStatus+', err '+err);
-                return true;
-            }
-        });
-        
-        return false;
+            $.ajax({
+               type: "POST",
+               url: "https://precis.herokuapp.com/summary",
+               data: JSON.stringify({'text': 'I want to express keen interest in joining esteemed computer science program of your university as a postgraduate student. I have completed four years’ undergraduate course in Computer Science and Engineering at one of the most reputed colleges of India, ISM Dhanbad, and worked for two and half years in two reputed technology companies - Yahoo Inc. and Flipkart. After excelling in academic courses and applying those concepts in real life as a professional, I gained knowledge in multiple fields of computer science. However, during last three years, I realized the importance of focus and specialization which led me to my decision of pursuing higher studies. The postgraduate program at your university enthused me with eminent faculty and strong research capabilities. I believe a post graduate course at University of Wisconsin-Madison will take me to the next level in my career. I have a strong interest in Mathematics right from my childhood years. Probably, I got it from my father. My father is a civil engineer with keen interest in Mathematics who instilled the same aptitude in me. I got introduced to programming in 9th standard where my curriculum included C++. I spent hours imagining various applications of the programming which raised lot questions in my mind.'}),
+               // dataType: 'json',
+               contentType: 'application/json; charset=UTF-8',
+               success: function(data) {
+                   //show content
+                   document.getElementById('position').innerHTML = JSON.stringify(data, null, 2);
+                   document.getElementById('position').display = 'inline';
+                   $( "#position" ).show( "slow", function() {
+                     
+                  });
+                   return true;
+               },
+               error: function(xhr, textStatus, err) {
+                  alert(xhr.responseText);
+                   alert('text status '+textStatus+', err '+err);
+                   return true;
+               }
+            });
+            return false;
         }
     </script>
       <style>
