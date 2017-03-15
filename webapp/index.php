@@ -93,7 +93,7 @@
                </a>
                <h3>Start generating your online summary</h3>
             </header>
-            <form onsubmit="return myFunction()" method='POST' action='index.php'>
+            <form onsubmit="return myFunction();" method='POST' action='index.php'>
                <style>
                   textarea#styled {
                   width: 60%;
