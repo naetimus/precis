@@ -50,6 +50,7 @@
             success: function(data) {
                 //show content
                 alert('Success!');
+                alert(data);
             },
             error: function(jqXHR, textStatus, err) {
                 //show error message
