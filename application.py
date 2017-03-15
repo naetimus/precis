@@ -20,7 +20,7 @@ def index():
             json_dict = json.loads(request.data)
             summary = textrank.textrank(json_dict['text'])
             summary_data = {'summary':summary}
-            print summary_data
+            print json.dumps(summary_data)
             return json.dumps(summary_data)
     except Exception as e:
         print e
