@@ -50,7 +50,7 @@
                 //show content
                 alert('Success!');
                 alert(JSON.stringify(data, null, 2))
-                document.getElementById('position').innerHTML += '<br>Some new content!';
+                document.getElementById('position').getElementsByTagName('b').innerHTML = (JSON.stringify(data, null, 2));
                 return true;
             },
             error: function(xhr, textStatus, err) {
