@@ -45,8 +45,8 @@
                success: function(data) {
                    //show content
                    var obj = JSON.parse(JSON.stringify(data, null, 2));
-                   alert(obj.count)
-                   document.getElementById('position').innerHTML = obj.summary;
+                   alert(obj[0])
+                   document.getElementById('position').innerHTML = obj[0].summary;
                    $( "#position" ).show( "slow", function() {
                      
                   });
