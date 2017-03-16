@@ -943,13 +943,13 @@
 		padding: 3em 0em;
 		border-top: 1px solid;
 		border-color: rgba(255,255,255,.05);
-		color:  #000000;
+		color:  #FFFFFF;
 	}
 	
 	#copyright a
 	{
 		text-decoration: none;
-		color:  #000000;
+		color:  #FFFFFF;
 	}
 
 	.black-background {background-color:#000000;}
@@ -957,7 +957,10 @@
 /*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
-	
+	#reli, #copyright
+	{
+		background: #000000	;
+	}
 	#featured
 	{
 		position: relative;
