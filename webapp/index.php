@@ -160,19 +160,19 @@
                <span class="pennant"><span class="fa fa-globe"></span></span>
                <h3>Precis</h3>
                <p>The project is in development. Summarize your articles, splitting the most important sentences and ranking a sentence based on importance.</p>
-               <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
+               <a href="https://github.com/shubham7jain/precis" class="button .btn-sample">Read More</a>
             </section>
             <section class="4u">
                <span class="pennant"><span class="fa fa-lock"></span></span>
                <h3>API</h3>
                <p>This tool is accessible by an API, integrate our api to generate summaries for a given text on your website or application.</p>
-               <a href="" target="_blank" class="button button-style1">Api Offline</a>
+               <a href="" target="_blank" class="button .btn-sample">Api Offline</a>
             </section>
             <section class="4u">
                <span class="pennant"><span class="fa fa-globe"></span></span>
                <h3>The Algorithm</h3>
                <p>A specific algorithm for extracting the most important points of the original document, using extraction based summarization. </p>
-               <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
+               <a href="https://github.com/shubham7jain/precis" class="button .btn-sample">Read More</a>
             </section>
          </div>
       </div>
