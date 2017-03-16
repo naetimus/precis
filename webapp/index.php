@@ -70,7 +70,7 @@
          }
       </style>
       <div class="beta">
-         <img src="precis.jpg" alt="automaitc text summarizer beta version" height="65" width="65">
+         <img src="precis.png" alt="automaitc text summarizer beta version" height="65" width="80">
       </div>
       <style>
          #reli {
