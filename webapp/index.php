@@ -160,7 +160,7 @@
             <section class="4u">
                <span class="pennant"><span class="fa fa-globe"></span></span>
                <h3>Precis</h3>
-               <p>The project is in development. Summarize your articles, splitting the most important sentences and ranking a sentence based on importance.</p>
+               <p>Summarize your articles, splitting the most important sentences and ranking a sentence based on importance.</p>
                <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
             </section>
             <section class="4u">
