@@ -121,8 +121,8 @@
                </script>
                <br>
                <br>
-               <input type="button" id="smm" value="Clear" class="btn btn-primary black-background white" style="background-color:#000000;" onclick="javascript:clear_textarea();">
-               <input type='submit' class="btn btn-primary black-background white" style="background-color:#000000;" id='smm2' name='submit' value='Summarize'>
+               <input type="button" id="smm" value="Clear" class="btn btn-primary black-background white" onclick="javascript:clear_textarea();">
+               <input type='submit' class="btn btn-primary black-background white" id='smm2' name='submit' value='Summarize'>
          </div>
          </form>
          <style>
