@@ -45,6 +45,7 @@
                success: function(data) {
                    //show content
                    obj = JSON.parse(JSON.stringify(data, null, 2));
+                   alert(obj.count)
                    document.getElementById('position').innerHTML = obj.summary;
                    $( "#position" ).show( "slow", function() {
                      
