@@ -86,6 +86,8 @@
          width:100%;
          color:black;
          }
+         .black-background {background-color:#000000;}
+         .white {color:#ffffff;}
       </style>
       <div id="reli">
       </div>
@@ -119,8 +121,8 @@
                </script>
                <br>
                <br>
-               <input type="button" id="smm" value="Clear" class="btn btn-primary btn-default black-background" onclick="javascript:clear_textarea();">
-               <input type='submit' class="btn btn-primary btn-default black-background" id='smm2' name='submit' value='Summarize'>
+               <input type="button" id="smm" value="Clear" class="btn btn-primary btn-default black-background white" onclick="javascript:clear_textarea();">
+               <input type='submit' class="btn btn-primary btn-default black-background white" id='smm2' name='submit' value='Summarize'>
          </div>
          </form>
          <style>
