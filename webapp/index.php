@@ -149,9 +149,9 @@
          <div class="row">
             <section class="4u">
                <span class="pennant"><span class="fa fa-globe"></span></span>
-               <h3>AutoSummarizer</h3>
+               <h3>Precis</h3>
                <p>The project is in development. Summarize your articles, splitting the most important sentences and ranking a sentence based on importance.</p>
-               <a href="http://autosummarizer.com/" class="button button-style1">Read More</a>
+               <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
             </section>
             <section class="4u">
                <span class="pennant"><span class="fa fa-lock"></span></span>
@@ -162,8 +162,8 @@
             <section class="4u">
                <span class="pennant"><span class="fa fa-globe"></span></span>
                <h3>The Algorithm</h3>
-               <p>(Demo) A specific algorithm for extracting the most important points of the original document, using extraction based summarization. </p>
-               <a href="http://autosummarizer.com/" class="button button-style1">Read More</a>
+               <p>A specific algorithm for extracting the most important points of the original document, using extraction based summarization. </p>
+               <a href="https://github.com/shubham7jain/precis" class="button button-style1">Read More</a>
             </section>
          </div>
       </div>
@@ -174,7 +174,7 @@
             <section>
                <ul class="contact">
                   <li><a href="#" class="fa fa-twitter"><span>Twitter</span></a></li>
-                  <li class="active"><a href="https://www.facebook.com/pages/Automatic-Summarization/1416470211938890" class="fa fa-facebook"  target="_blank"><span>Facebook</span></a></li>
+                  <li class="active"><a href="https://www.facebook.com/profile.php?id=100000140862582" class="fa fa-facebook"  target="_blank"><span>Facebook</span></a></li>
                </ul>
             </section>
          </div>
