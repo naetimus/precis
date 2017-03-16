@@ -2,6 +2,7 @@
 <!DOCTYPE HTML>
 <html>
    <head>
+      <link rel="shortcut icon" href="precis.png">
       <title>Precis - Free automatic text summarization tool</title>
       <meta http-equiv="content-type" content="text/html; charset=utf-8" />
       <meta name="keywords" content="online symmary, text summarization tool, automatic text summary, text mining, text summarizer, text summary, auto summarizer, automatic text summarizer, free summarizer, summarize text, summary generator, text summary, online text summarization, summarizer, summary, summarize, article summarizer, ariticle summarization">
@@ -121,8 +122,8 @@
                </script>
                <br>
                <br>
-               <input type="button" id="smm" value="Clear" class="btn .btn-sample" onclick="javascript:clear_textarea();">
-               <input type='submit' class="btn .btn-sample" id='smm2' name='submit' value='Summarize'>
+               <input type="button" id="smm" value="Clear" class=".btn-sample" onclick="javascript:clear_textarea();">
+               <input type='submit' class=".btn-sample" id='smm2' name='submit' value='Summarize'>
          </div>
          </form>
          <style>
