@@ -943,13 +943,13 @@
 		padding: 3em 0em;
 		border-top: 1px solid;
 		border-color: rgba(255,255,255,.05);
-		color:  rgba(255,255,255,.1);
+		color:  #000000;
 	}
 	
 	#copyright a
 	{
 		text-decoration: none;
-		color:  rgba(255,255,255,.2);
+		color:  #000000;
 	}
 
 	.black-background {background-color:#000000;}
@@ -961,7 +961,7 @@
 	#featured
 	{
 		position: relative;
-		background: #FFFFFF;
+		background: #FFFFFF	;
 		text-align: center;
 	}
 	
