@@ -102,8 +102,7 @@
                   font-family: Tahoma, sans-serif;
                   }
                </style>
-               <textarea  name="text" placeholder="Paste your text article and click Summarize.. " id="styled">
-               </textarea>
+               <textarea  name="text" placeholder="Paste your text article and click Summarize.. " id="styled"></textarea>
                <script>
                   function clear_textarea() {
                      document.getElementById("styled").value = "";
