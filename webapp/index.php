@@ -99,7 +99,7 @@
          <div class="container">
             <header>
                <a href="">
-                  <h2>Precis</h2>
+                  <h2 style="color:black;">Precis</h2>
                </a>
                <h3>Start generating your online summary</h3>
             </header>
