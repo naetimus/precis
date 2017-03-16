@@ -44,8 +44,7 @@
                contentType: 'application/json; charset=UTF-8',
                success: function(data) {
                    //show content
-                   var obj = JSON.parse(data, null, 2);
-                   alert(obj[0])
+                   alert(data)
                    document.getElementById('position').innerHTML = obj[0].summary;
                    $( "#position" ).show( "slow", function() {
                      
