@@ -122,8 +122,8 @@
                </script>
                <br>
                <br>
-               <input type="button" id="smm" value="Clear" class=".button1" onclick="javascript:clear_textarea();">
-               <input type='submit' class=".button1" id='smm2' name='submit' value='Summarize'>
+               <input type="button" id="smm" value="Clear" class="button1" onclick="javascript:clear_textarea();">
+               <input type='submit' class="button1" id='smm2' name='submit' value='Summarize'>
          </div>
          </form>
          <style>
