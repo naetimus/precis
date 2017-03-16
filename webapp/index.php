@@ -119,8 +119,8 @@
                </script>
                <br>
                <br>
-               <input type="button" id="smm" value="Clear" class="pure-button pure-button-active" onclick="javascript:clear_textarea();"> 
-               <input type='submit' class="btn btn-primary btn-default" id='smm2' name='submit' value='Summarize'><span class="glyphicon glyphicon-align-justify"></span>
+               <input type="button" id="smm" value="Clear" class="btn btn-primary btn-default black-background" onclick="javascript:clear_textarea();">
+               <input type='submit' class="btn btn-primary btn-default black-background" id='smm2' name='submit' value='Summarize'>
          </div>
          </form>
          <style>
