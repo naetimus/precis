@@ -9,6 +9,7 @@ from precis.html_parser import HtmlParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.parsers.plaintext import PlaintextParser
 import requests
+import nltk
 
 application = Flask(__name__)
 application.debug=True
@@ -75,5 +76,6 @@ def get_parser(url, tokenizer):
     return parser, meta
 
 if __name__ == '__main__':
+    nltk.download()
     port = int(os.environ.get("PORT", 33507))
     application.run(host='0.0.0.0', debug=True, port=port)
