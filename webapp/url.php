@@ -45,7 +45,7 @@
       <script>
         function myFunction() {
            var url = document.getElementById('styled').value
-           $("#loading").show();
+           $("#loading").style.visibility = "visible";
             $.ajax({
                type: "POST",
                url: "https://precis.herokuapp.com/summaryurl",
@@ -59,7 +59,7 @@
                    $( "#position" ).show( "slow", function() {
                      
                   });
-                   $("#loading").hide();
+                   $("#loading").style.visibility = "hidden";
                    return true;
                },
                error: function(xhr, textStatus, err) {
