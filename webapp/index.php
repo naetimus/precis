@@ -114,9 +114,9 @@
                a{
                   color:black;
                }
-            </style>>
-            <a href="text.php" class="btn btn-primary btn-lg disabled" role="button">Summary by Text</a>
-            <a href="url.php" class="btn btn-primary btn-lg disabled" role="button">Summary by Url</a>
+            </style>
+            <a href="text.php" class="btn btn-primary btn-lg" role="button">Summary by Text</a>
+            <a href="url.php" class="btn btn-primary btn-lg" role="button">Summary by Url</a>
 <!--             <form onsubmit="return myFunction();" method='POST' action='index.php'>
                <style>
                   textarea#styled {
