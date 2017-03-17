@@ -43,6 +43,9 @@
          
       </script>
       <script>
+         function init() {
+            $("#loading").hide();
+         }
         function myFunction() {
            var text = document.getElementById('styled').value
            $("#loading").show();
@@ -96,7 +99,7 @@
       <div id="reli">
       </div>
    </head>
-   <body class="homepage">
+   <body class="homepage" onload="return init()">
       <!-- Header -->
       <!-- Featured -->
       <div id="featured">
@@ -144,7 +147,7 @@
                });
             });
          </script>
-         <div class="loading">
+         <div id="loading">
             <img SRC="ajax-loader.gif">
             </img>
          </div>
