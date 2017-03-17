@@ -150,7 +150,7 @@
          <br/>
          <br/>
          <div id="loading">
-            <img src="ajax-loader.gif" style="width:50% ">
+            <img src="ajax-loader.gif" style="width:25% ">
             </img>
          </div>
          <div id="position">
