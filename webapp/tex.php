@@ -110,15 +110,7 @@
                </a>
                <h3>Start generating your online summary</h3>
             </header>
-            <style type="text/css">
-               .custombutton a{
-                  color:black;
-               }
-            </style>
-
-            <a href="url.php" class="button1" role="button">Summary by Url</a>
-            <a href="tex.php" class="button1" role="button">Summary by Text</a>
-<!--             <form onsubmit="return myFunction();" method='POST' action='index.php'>
+            <form onsubmit="return myFunction();" method='POST' action='index.php'>
                <style>
                   textarea#styled {
                   width: 60%;
@@ -138,9 +130,8 @@
                <br>
                <input type="button" id="smm" value="Clear" class="button1" onclick="javascript:clear_textarea();">
                <input type='submit' class="button1" id='smm2' name='submit' value='Summarize'>
-         </div> -->
-         <!-- </form> -->
-
+         </div>
+         </form>
          <style>
             #position {
             width:60%;
