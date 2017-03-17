@@ -38,7 +38,7 @@ def summaryByUrl():
         all_sentences = ""
         for sentence in parser.document.sentences:
             all_sentences += str(sentence)
-        summary = textrank.textrank(all_sentences, 'SENTENCE', 0.1)
+        summary = textrank.textrank(all_sentences, 0, 0.1)
         summary_data = {'summary':summary}
         print json.dumps(summary_data)
         return json.dumps(summary_data)
