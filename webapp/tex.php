@@ -154,10 +154,10 @@
             <img src="ajax-loader.gif" style="width:25% ">
             </img>
          </div>
-         <div id="error" class="alert alert-danger" role="alert" style="visibility:hidden;">
-            <strong>Oh snap!</strong> Change a few things up and try submitting again.
-         </div>
          <div id="position">
+         </div>
+         <div id="error" class="alert alert-danger" role="alert" style="visibility:hidden; width: 50%;">
+            <strong>Oh snap!</strong> Change a few things up and try submitting again.
          </div>
          <br>
          <br>
