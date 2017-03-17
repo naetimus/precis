@@ -5,7 +5,7 @@ Flask-WTF==0.10.3
 gunicorn==19.7.0
 MarkupSafe==0.23
 networkx==1.11
-nltk==3.2.2
+nltk==2.0.1
 numpy==1.11.1
 scikit-image==0.12.3
 scikit-learn==0.17.1
