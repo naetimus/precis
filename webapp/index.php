@@ -111,12 +111,14 @@
                <h3>Start generating your online summary</h3>
             </header>
             <style type="text/css">
-               a{
+               .custombutton a{
                   color:black;
                }
             </style>
-            <a href="text.php" class="btn btn-primary btn-lg" role="button">Summary by Text</a>
-            <a href="url.php" class="btn btn-primary btn-lg" role="button">Summary by Url</a>
+
+            <a href="text.php" class="custombutton btn btn-primary btn-lg" role="button">Summary by Text</a>
+            
+            <a href="url.php" class="custombutton btn btn-primary btn-lg" role="button">Summary by Url</a>
 <!--             <form onsubmit="return myFunction();" method='POST' action='index.php'>
                <style>
                   textarea#styled {
