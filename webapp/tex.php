@@ -43,8 +43,8 @@
          
       </script>
       <script>
-         $("#loading").hide();
         function myFunction() {
+         document.getElementById("error").style.visibility = "hidden";
            var text = document.getElementById('styled').value
            document.getElementById("loading").style.visibility = "visible";
             $.ajax({
@@ -67,6 +67,7 @@
                   alert(xhr.responseText);
                    alert('text status '+textStatus+', err '+err);
                    document.getElementById("loading").style.visibility = "hidden";
+                   document.getElementById("error").style.visibility = "visible";
                    return true;
                }
             });
@@ -152,6 +153,9 @@
          <div id="loading" style="visibility:hidden;">
             <img src="ajax-loader.gif" style="width:25% ">
             </img>
+         </div>
+         <div id="error" class="alert alert-danger" role="alert" style="visibility:hidden;">
+            <strong>Oh snap!</strong> Change a few things up and try submitting again.
          </div>
          <div id="position">
          </div>
