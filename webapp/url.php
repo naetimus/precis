@@ -119,7 +119,7 @@
                   font-family: Tahoma, sans-serif;
                   }
                </style>
-               <textbox  name="text" placeholder="Paste your url and click Summarize.. " id="styled"></textbox>
+               <input type="text" name="text" placeholder="Paste your url and click Summarize.. " id="styled"/>
                <script>
                   function clear_textarea() {
                      document.getElementById("styled").value = "";
