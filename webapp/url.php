@@ -159,8 +159,8 @@
          </div>
          <div id="position">
          </div>
-         <div id="error" class="alert alert-danger" role="alert" style="visibility:hidden; width: 50%;">
-            <strong>Oh snap!</strong> Change a few things up and try submitting again.
+         <div id="error" class="alert alert-danger" role="alert" style="visibility:hidden; width: 50%; margin: auto;">
+            Oh snap! Change a few things up and try submitting again.
          </div>
          <br>
          <br>
