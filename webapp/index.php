@@ -147,8 +147,10 @@
                });
             });
          </script>
+         <br/>
+         <br/>
          <div id="loading">
-            <img SRC="ajax-loader.gif">
+            <img src="ajax-loader.gif" style="max-width: 50% ">
             </img>
          </div>
          <div id="position">
