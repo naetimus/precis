@@ -45,7 +45,7 @@
       <script>
         function myFunction() {
            var url = document.getElementById('styled').value
-           $("#loading").style.visibility = "visible";
+           document.getElementById("loading").style.visibility = "visible";
             $.ajax({
                type: "POST",
                url: "https://precis.herokuapp.com/summaryurl",
@@ -59,13 +59,13 @@
                    $( "#position" ).show( "slow", function() {
                      
                   });
-                   $("#loading").style.visibility = "hidden";
+                   document.getElementById("loading").style.visibility = "hidden";
                    return true;
                },
                error: function(xhr, textStatus, err) {
                   alert(xhr.responseText);
                    alert('text status '+textStatus+', err '+err);
-                   $("#loading").hide();
+                   document.getElementById("loading").style.visibility = "hidden";
                    return true;
                }
             });
