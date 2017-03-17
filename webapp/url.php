@@ -43,7 +43,6 @@
          
       </script>
       <script>
-         $("#loading").hide();
         function myFunction() {
            var url = document.getElementById('styled').value
            $("#loading").show();
@@ -152,7 +151,7 @@
          </script>
          <br/>
          <br/>
-         <div id="loading">
+         <div id="loading" style="visibility:hidden;">
             <img src="ajax-loader.gif" style="width:25% ">
             </img>
          </div>
