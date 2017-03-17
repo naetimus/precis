@@ -46,7 +46,7 @@
          $("#loading").hide();
         function myFunction() {
            var text = document.getElementById('styled').value
-           $("#loading").show();
+           document.getElementById("loading").style.visibility = "visible";
             $.ajax({
                type: "POST",
                url: "https://precis.herokuapp.com/summary",
@@ -60,13 +60,13 @@
                    $( "#position" ).show( "slow", function() {
                      
                   });
-                   $("#loading").hide();
+                   document.getElementById("loading").style.visibility = "hidden";
                    return true;
                },
                error: function(xhr, textStatus, err) {
                   alert(xhr.responseText);
                    alert('text status '+textStatus+', err '+err);
-                   $("#loading").hide();
+                   document.getElementById("loading").style.visibility = "hidden";
                    return true;
                }
             });
@@ -149,7 +149,7 @@
          </script>
          <br/>
          <br/>
-         <div id="loading">
+         <div id="loading" style="visibility:hidden;">
             <img src="ajax-loader.gif" style="width:25% ">
             </img>
          </div>
