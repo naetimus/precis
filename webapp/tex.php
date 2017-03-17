@@ -64,8 +64,6 @@
                    return true;
                },
                error: function(xhr, textStatus, err) {
-                  alert(xhr.responseText);
-                   alert('text status '+textStatus+', err '+err);
                    document.getElementById("loading").style.visibility = "hidden";
                    document.getElementById("error").style.visibility = "visible";
                    return true;
