@@ -116,9 +116,8 @@
                }
             </style>
 
-            <a href="text.php" class="custombutton btn btn-primary btn-lg" role="button">Summary by Text</a>
-            
-            <a href="url.php" class="custombutton btn btn-primary btn-lg" role="button">Summary by Url</a>
+            <a href="url.php" class="button1" role="button">Summary by Url</a>
+            <a href="text.php" class="button1" role="button">Summary by Text</a>
 <!--             <form onsubmit="return myFunction();" method='POST' action='index.php'>
                <style>
                   textarea#styled {
