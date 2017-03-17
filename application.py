@@ -76,6 +76,6 @@ def get_parser(url, tokenizer):
     return parser, meta
 
 if __name__ == '__main__':
-    nltk.download()
+    nltk.download('punkt')
     port = int(os.environ.get("PORT", 33507))
     application.run(host='0.0.0.0', debug=True, port=port)
