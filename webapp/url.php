@@ -119,7 +119,10 @@
                   font-family: Tahoma, sans-serif;
                   }
                </style>
-               <input type="text" name="text" placeholder="Paste your url and click Summarize.. " id="styled"/>
+               <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1">URL:</span>
+                  <input type="text" name="text" class="form-control" id="styled" placeholder="Paste your url and click Summarize.. " aria-describedby="sizing-addon1">
+               </div>
                <script>
                   function clear_textarea() {
                      document.getElementById("styled").value = "";
