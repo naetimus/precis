@@ -110,8 +110,13 @@
                </a>
                <h3>Start generating your online summary</h3>
             </header>
-            <a href="textbox.php" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Summary by Text</a>
-            <a href="url.php" class="btn btn-primary btn-lg disabled" role="button" aria-disabled="true">Summary by Url</a>
+            <style type="text/css">
+               a{
+                  color:black;
+               }
+            </style>>
+            <a href="text.php" class="btn btn-primary btn-lg disabled" role="button">Summary by Text</a>
+            <a href="url.php" class="btn btn-primary btn-lg disabled" role="button">Summary by Url</a>
 <!--             <form onsubmit="return myFunction();" method='POST' action='index.php'>
                <style>
                   textarea#styled {
