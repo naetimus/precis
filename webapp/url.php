@@ -47,12 +47,12 @@
             $("#loading").hide();
          }
         function myFunction() {
-           var text = document.getElementById('styled').value
+           var url = document.getElementById('styled').value
            $("#loading").show();
             $.ajax({
                type: "POST",
-               url: "https://precis.herokuapp.com/summary",
-               data: JSON.stringify({'text': text}),
+               url: "https://precis.herokuapp.com/summaryurl",
+               data: JSON.stringify({'url': url}),
                // dataType: 'json',
                contentType: 'application/json; charset=UTF-8',
                success: function(data) {
@@ -119,7 +119,7 @@
                   font-family: Tahoma, sans-serif;
                   }
                </style>
-               <textarea  name="text" placeholder="Paste your text article and click Summarize.. " id="styled"></textarea>
+               <textbox  name="text" placeholder="Paste your url and click Summarize.. " id="styled"></textbox>
                <script>
                   function clear_textarea() {
                      document.getElementById("styled").value = "";
