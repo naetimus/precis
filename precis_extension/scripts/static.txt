@@ -1,0 +1,5 @@
+# this is the text you want to use before the call to action
+text = Do you like the TLDR plugin? Wish it were on mobile?
+
+# this will be the green text. usually a call to action
+action = <a href="#">Click here</a> to get the iPhone or Android app.

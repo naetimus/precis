@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TLDR Options</title>
+	<link rel="stylesheet" type="text/css" href="../css/tldr.css" />
+	<script src="../scripts/jquery-1.7.2.min.js"></script>
+	<script src="../scripts/options.js"></script>
+</head>
+<body class="tldr-options-page">
+	<div id="tldr">
+		<div class="tldr-container">
+			<div class="tldr-closebox"><a class="tldr-close"></a></div>
+			<div class="tldr-sidebar">
+				<ul>
+					<li class="options tldr-options active"><a class="menu ">options</a></li>
+					<li class="options tldr-support"><a class="menu">support</a></li>
+					<li class="options tldr-privacy"><a class="menu">privacy/legal</a></li>
+				</ul>
+				<a class="lhe-logo" href="http://stremor.com/tech"><img src="data:image/png;base64,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" /></a>
+			</div>
+			<div class="tldr-main">
+				<article class="tldr-content tldr-prefs">
+					<section class="tldr-options">
+						<h2>TLDR Options</h2>
+						<p>The following options control the display of content rendered in the TLDR window.</p>
+						<h3><label for="tldr-length">Default TLDR Length</label></h3>
+						<div class="radios"> 
+							<ul>
+								<li>
+									<label><input type="radio" name="tldr-length" value="exec" id="tldr-summary">Summary</label>
+								</li>
+								
+								<li>
+									<label><input type="radio" name="tldr-length" value="short" id="tldr-short">Short</label>
+								</li>
+								
+								<li>
+									<label><input type="radio" name="tldr-length" value="medium" id="tldr-medium">Medium</label>
+								</li>
+								
+								<li>
+									<label><input type="radio" name="tldr-length" value="long" id="tldr-long">Long</label>
+								</li>
+							</ul>
+						</div>
+						<h3><label for="tldr-images">Display Images</label></h3>
+						<div class="radios"> 
+							<ul>
+								<li>
+									<label><input type="radio" name="tldr-images" value="yes" id="tldr-images-yes">Yes</label>
+								</li>
+								
+								<li>
+									<label><input type="radio" name="tldr-images" value="no" id="tldr-images-no">No</label>
+								</li>
+							</ul>
+						</div>
+						<h3><label for="tldr-access">Allow TLDR to summarize content on secure sites</label></h3>
+						<div class="radios"> 
+							<ul>
+								<li>
+									<label><input type="radio" name="tldr-access" value="allow" id="tldr-access-yes">Yes</label>
+								</li>
+								
+								<li>
+									<label><input type="radio" name="tldr-access" value="noallow" id="tldr-access-no">No</label>
+								</li>
+
+								<li>
+									<label><input type="radio" name="tldr-access" value="warn" id="tldr-access-warn">Warn Me</label>
+								</li>
+							</ul>
+						</div>
+						<button id="tldr-save">Save</button>
+						<p>Clicking the Save button will save your preferences and return you to the Extensions page.</p>
+					</section>
+					<section class="tldr-support hidden">
+						<h2>TLDR Support</h2>
+
+						<p>Thank you for using the TLDR plugin. We've worked hard to make it great &mdash; but we realize that bugs can happen. If you are having difficulty with the plugin, or you think you might have found a bug, we would love to hear from you.</p>
+						<p>It's easy to get in touch with us! Simply visit our support system at: <a href="http://support.stremor.com">http://support.stremor.com</a> or you can even tweet your issues to <a href="http://twitter.com/stremorcop">@stremorcorp</a> and one of our support staff will respond as quickly as possible.</p>
+					</section>
+					<section class="tldr-privacy hidden">
+						<h3>Privacy Policy & Legal Info</h3>
+						<p>Stremor provides the "TLDR Plugin" that allows you to interact with internet web sites provided by different companies through your web browser. In order to function, Stremor may collect limited non-personal information about you, and your online activities. This Privacy Policy explains what information we collect, how we collect it, how we use it, and the types of companies with whom we share it.  Before you use Stremor's "TLDR Plugin," you should read through this legal information completely and make sure that you are comfortable with our terms.</p> 
+
+						<h4>What is Stremor Doing?</h4>
+
+						<p>Stremor is using it's Liquid Helium, Language Heuristics Engine, to review the long copy on pages where users initiate the TLDR Plugin, then sending back shortened versions that are easier to manage for people with limited time. We call this the "synopsized" version.</p>
+
+						<h4>Can I Use The Synopsized Versions Elsewhere?</h4>
+
+						<p>No. Our plugin is intended for the convenience of our users as they browse the web and encounter pages of text too long for their current time commitment. By accepting these terms, you agree not to use the synopsized copy for any other reason.</p>
+
+						<h4>Does The Plugin Track Every Page I Visit?</h4>
+
+						<p>No. Our plugin is only aware of the pages on which you use it.</p>
+
+						<h4>Does The Plugin Collect Private Information?</h4>
+
+						<p>In all situations, we track and collect non-personally identifiable information which may include your IP address, your geographic location, the URLs you choose to synopsized through the tldr plug-in. This information is stored for up to 48 hours to aid in debugging and improving our service.</p>
+						<h4>How Does The Plugin Collect Information?</h4>
+
+						<p>We may collect the non-personally identifiable information when you use the tldr plug in. If you do not click the plug-in icon to create a synopsized version of copy on a web page, we remain idle collecting nothing.</p>
+
+						<h4>How Does Stremor Use Information?</h4>
+
+						<p>We use the information to continually improve the service, as well as provide us with metrics as to how many people are using our plug-in and how often they use it.</p>
+
+						<h4>With Whom Does Stremor Share Information?</h4>
+
+						<p>The information is only shared in aggregate. For example, we may say that X number of people are using our plug-in, or that Y number of people are synopsizing blog pages and Z number are doing so on news websites. We will never share your IP address or any other data specific to a user of the service.</p>
+						<h4>  Legal Proceeding or Potential Legal Proceedings.  </h4>
+
+						<p>We may share the non-personally identifiable information we have with others as required by law. </p>
+
+						<h4>How Does Stremor Secure Information</h4>
+
+						<p>Stremor has instituted reasonable and appropriate measures to keep all information secure, and to help prevent it from becoming disclosed to individuals who are not described in this policy.  While we follow reasonable procedures to try to protect your personally identifiable information, no security system is perfect, and we cannot promise, and you should not expect, that your non-personally identifiable information will remain secure in all circumstances.  </p>
+						<h4>What About Links That Leave The Plugin?</h4>
+
+						<p>When you click any links displayed in the plugin that take you to a new page, including the <b>Find More Like This</b> feature, you are subject to any terms and privacy policies of those domains.</p>
+
+						<h4>How Do I Communicate With Stremor?</h4>
+
+						<p>If you have any questions or concerns regarding the privacy policy, please contact electronically at privacy@stremor.com, or send mail to Stremor Corp, 14861 N. Scottsdale Rd, Scottsdale, AZ 85254. If we need, or are required, to contact you concerning any event that involves your information we may decide to do so by email, telephone, or mail.</p>
+					</section>
+				</article>
+				<footer class="tldr-info">
+					<p class="tldr-powered-by">built by <a href="http://stremor.com/">Stremor</a>, powered by <a href="http://stremor.com/technology.html">Liquid Helium</a></p>
+				</footer>
+			</div>	
+		</div>
+	</div>
+</body>
+</html>

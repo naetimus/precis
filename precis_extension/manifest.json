@@ -1,0 +1,39 @@
+{
+  "browser_action": {"default_icon": "icons/precis.png"},
+  "minimum_chrome_version": "18",
+  "options_page": "html/options.html",
+  "version": "2.1.1",
+  "web_accessible_resources": [
+    "html/overlay.html"
+  ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "description": "Auto Summarization Tool",
+  "name": "Precis",
+  "background": {
+    "scripts": [
+      "scripts/jquery-1.7.2.min.js",
+      "scripts/background.js"
+    ],
+    "persistent": true
+  },
+  "permissions": [
+    "tabs",
+    "http://*/*",
+    "https://*/*",
+    "contextMenus",
+    "background"
+  ],
+  "icons": {
+    "48": "icons/precis.png",
+    "128": "icons/precis.png",
+    "16": "icons/precis.png"
+  },
+  "content_scripts": [{
+    "matches": [
+      "http://*/*",
+      "https://*/*"
+    ],
+    "js": ["scripts/jquery-1.7.2.min.js"]
+  }],
+  "manifest_version": 2
+}

@@ -1,0 +1,52 @@
+<html>
+<head>
+<script type="text/javascript">
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close");
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+    	modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+   	 	if (event.target == modal) {
+   	     	modal.style.display = "none";
+    	}
+	}
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap-model.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head> 
+	<body>
+		<div class="tldr-container tldr-cf">
+		</div>
+		<div id="myModal" class="modal" style="background-color: rgba(255,255,255, 0.93);position:fixed;
+		overflow-x:auto;overflow-y:scroll;bottom:0;left:0;right:0;top:0;
+		z-index:9999;">
+
+		  <div class="modal-content">
+		  <div class="modal-header">
+		    <span class="close">&times;</span>
+		    <h2>Precis - Summary of the page</h2>
+		  </div>
+		  <div class="modal-body">
+		    <p>Some text in the Modal Body</p>
+		    <p>Some other text...</p>
+		  </div>
+		  <div class="modal-footer">
+		  <p id= "footer-text">
+		    © All Copyrights Reserved by precis.com, College Station, 77840, Contact us: precis@tamu.edu
+		  </p>
+		  </div>
+		</div>
+
+		</div>
+	</body>
+</html>
