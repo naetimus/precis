@@ -1034,3 +1034,8 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+
+#position {
+    text-align: justify;
+    text-justify: inter-word;
+}
