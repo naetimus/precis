@@ -184,7 +184,7 @@
                <span class="pennant"><span class="fa fa-lock"></span></span>
                <h3>API</h3>
                <p>This tool is accessible by an API, integrate our api to generate summaries for a given text on your website or application.</p>
-               <a href="" target="_blank" class="button button-style1">Api Offline</a>
+               <a href="" target="_blank" class="button button-style1">Read More</a>
             </section>
             <section class="4u">
                <span class="pennant"><span class="fa fa-globe"></span></span>
