@@ -45,6 +45,7 @@
       <script>
         function myFunction() {
            var text = document.getElementById('styled').value
+           $("#loading").show();
             $.ajax({
                type: "POST",
                url: "https://precis.herokuapp.com/summary",
@@ -58,11 +59,13 @@
                    $( "#position" ).show( "slow", function() {
                      
                   });
+                   $("#loading").hide();
                    return true;
                },
                error: function(xhr, textStatus, err) {
                   alert(xhr.responseText);
                    alert('text status '+textStatus+', err '+err);
+                   $("#loading").hide();
                    return true;
                }
             });
@@ -141,6 +144,10 @@
                });
             });
          </script>
+         <div class="loading">
+            <img SRC="ajax-loader.gif">
+            </img>
+         </div>
          <div id="position">
          </div>
          <br>
