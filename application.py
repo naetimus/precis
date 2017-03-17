@@ -36,9 +36,13 @@ def summaryByUrl():
         tokenizer = Tokenizer("english")
         parser, meta = get_parser(url, tokenizer)
         all_sentences = ""
-        for sentence in parser.document.sentences:
-            all_sentences += str(sentence)
-        summary = textrank.textrank(all_sentences, 0, 0.1)
+        for paragraph in parser.document.paragraphs:
+            sentences = paragraph.sentences
+            for sentence in sentences:
+                all_sentences += str(sentence)
+            all_sentences += "\n"
+        print all_sentences
+        summary = textrank.textrank(all_sentences)
         summary_data = {'summary':summary}
         print json.dumps(summary_data)
         return json.dumps(summary_data)
