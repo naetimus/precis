@@ -43,9 +43,7 @@
          
       </script>
       <script>
-         function init() {
-            $("#loading").hide();
-         }
+         $("#loading").hide();
         function myFunction() {
            var text = document.getElementById('styled').value
            $("#loading").show();
@@ -85,7 +83,9 @@
          }
       </style>
       <div class="beta">
-         <img src="precis.png" alt="automaitc text summarizer beta version" height="65" width="80">
+         <a href="index.php">
+            <img src="precis.png" alt="automaitc text summarizer beta version" height="65" width="80">
+         </a>
       </div>
       <style>
          #reli {
@@ -99,13 +99,13 @@
       <div id="reli">
       </div>
    </head>
-   <body class="homepage" onload="return init()">
+   <body class="homepage">
       <!-- Header -->
       <!-- Featured -->
       <div id="featured">
          <div class="container">
             <header>
-               <a href="">
+               <a href="index.php">
                   <h2 style="color:black;">Precis</h2>
                </a>
                <h3>Start generating your online summary</h3>
