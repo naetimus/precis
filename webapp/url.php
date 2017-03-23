@@ -60,6 +60,10 @@
                    $( "#position" ).show( "slow", function() {
                      
                   });
+                   document.getElementById('title').innerHTML = '<b>'.concat(obje.meta.title, '</b>');
+                   $( "#title" ).show( "slow", function() {
+                     
+                  });
                    document.getElementById("loading").style.visibility = "hidden";
                    return true;
                },
@@ -154,6 +158,9 @@
          <div id="loading" style="visibility:hidden;">
             <img src="ajax-loader.gif" style="width:25% ">
             </img>
+         </div>
+         <div id="title">
+            
          </div>
          <div id="position">
          </div>

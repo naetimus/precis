@@ -76,8 +76,9 @@ def summaryByUrl():
                 all_sentences += str(sentence)
             all_sentences += "\n"
         print all_sentences
+        print meta
         summary = textrank.textrank(all_sentences)
-        summary_data = {'summary':summary}
+        summary_data = {'summary':summary, 'meta':meta}
         print json.dumps(summary_data)
         return json.dumps(summary_data)
 
