@@ -21,6 +21,8 @@ Swagger(application)
 def index():
     """Summary API to return the summary given the text
     ---
+    tags:
+      - precis
     parameters:
       - name: text
         type: string
@@ -48,6 +50,8 @@ def index():
 def summaryByUrl():
     """Summary API to return the summary given the URL of a page
     ---
+    tags:
+      - precis
     parameters:
       - name: URL
         type: string
