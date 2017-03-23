@@ -10,13 +10,29 @@ from sumy.nlp.tokenizers import Tokenizer
 from sumy.parsers.plaintext import PlaintextParser
 import requests
 import nltk
+from flasgger import Swagger
 
 application = Flask(__name__)
 application.debug=True
 CORS(application)
 
+Swagger(application)
 @application.route('/summary', methods=['POST'])
 def index():
+    """Summary API to return the summary given the text
+    ---
+    parameters:
+      - name: text
+        type: string
+    responses:
+      200:
+        description: Summary in Json format
+        schema:
+          id: summary
+          properties:
+            summary:
+                type: string
+    """
     try:
         if request.method == "POST":
             print request.data
@@ -30,6 +46,20 @@ def index():
 
 @application.route('/summaryurl', methods=['POST'])
 def summaryByUrl():
+    """Summary API to return the summary given the URL of a page
+    ---
+    parameters:
+      - name: URL
+        type: string
+    responses:
+      200:
+        description: Summary in Json format
+        schema:
+          id: summary
+          properties:
+            summary:
+                type: string
+    """
     if request.method == "POST":
         json_dict = json.loads(request.data)
         url = json_dict['url']
