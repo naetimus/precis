@@ -18,7 +18,7 @@ def get_arguments():
         sys.exit(2)
     path = None
     summarize_by = SENTENCE
-    ratio = 0.2
+    ratio = 0.01
     words = None
     for o, a in opts:
         if o in ("-t", "--text"):
