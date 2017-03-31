@@ -88,7 +88,7 @@ def _extract_most_important_sentences(sentences, ratio, words):
         return _get_sentences_with_word_count(sentences, words)
 
 
-def summarize(text, ratio, words=None, language="english", split=False, scores=False):
+def summarize(text, ratio=0.2, words=None, language="english", split=False, scores=False):
     # Gets a list of processed sentences.
     sentences = _clean_text_by_sentences(text, language)
 

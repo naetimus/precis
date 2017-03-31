@@ -58,8 +58,8 @@ def summaryByUrl():
     responses:
       200:
         description: Summary in Json format
-        schema: id: summary
-          
+        schema:
+          id: summary
           properties:
             summary:
                 type: string
