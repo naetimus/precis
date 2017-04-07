@@ -26,6 +26,8 @@ def index():
     parameters:
       - name: text
         type: string
+      - name: ratio
+        type: float
     responses:
       200:
         description: Summary in Json format
@@ -39,7 +41,8 @@ def index():
         if request.method == "POST":
             print request.data
             json_dict = json.loads(request.data)
-            summary = textrank.textrank(json_dict['text'])
+            ratio = json_dict['ratio'] if 'ratio' in json_dict else 0.2
+            summary = textrank.textrank(json_dict['text'], ratio)
             summary_data = {'summary':summary}
             print json.dumps(summary_data)
             return json.dumps(summary_data)
@@ -55,6 +58,8 @@ def summaryByUrl():
     parameters:
       - name: URL
         type: string
+      - name: ratio
+        type: float
     responses:
       200:
         description: Summary in Json format
@@ -67,6 +72,7 @@ def summaryByUrl():
     if request.method == "POST":
         json_dict = json.loads(request.data)
         url = json_dict['url']
+        ratio = json_dict['ratio'] if 'ratio' in json_dict else 0.2
         tokenizer = Tokenizer("english")
         parser, meta = get_parser(url, tokenizer)
         all_sentences = ""
@@ -77,7 +83,7 @@ def summaryByUrl():
             all_sentences += "\n"
         print all_sentences
         print meta
-        summary = textrank.textrank(all_sentences)
+        summary = textrank.textrank(all_sentences, ratio)
         summary_data = {'summary':summary, 'meta':meta}
         print json.dumps(summary_data)
         return json.dumps(summary_data)

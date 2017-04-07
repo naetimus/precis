@@ -18,7 +18,7 @@ def get_arguments():
         sys.exit(2)
     path = None
     summarize_by = SENTENCE
-    ratio = 0.2
+    ratio = 0.20
     words = None
     for o, a in opts:
         if o in ("-t", "--text"):
@@ -55,7 +55,7 @@ def usage():
     print help_text
 
 
-def textrank(text, summarize_by=SENTENCE, ratio=0.2, words=None):
+def textrank(text, ratio=0.20, summarize_by=SENTENCE, words=None):
     if summarize_by == SENTENCE:
         return summarize(text, ratio, words)
     else:
@@ -69,7 +69,7 @@ def main():
     with open(path) as file:
         text = file.read()
 
-    print textrank(text, summarize_by, ratio, words)
+    print textrank(text, ratio, summarize_by, words)
 
 
 if __name__ == "__main__":
