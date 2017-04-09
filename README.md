@@ -53,3 +53,25 @@ Following is the work that we want to complete if time permits:-
 | ea8fd2a90772f6c9ed525eddc7698ae2 | 0.320755 | 0.251572 |
 | f555eee2cec40b01728b48738746d678 | 0.387755 | 0.367347 |
 | feedc24a067e279b75b5c9fbfea1dfd5 | 0.436364 | 0.351515 |
+
+## REPOSITORIES THAT OUR PROJECT USES FOR EVALUATION ##
+* pyrouge - https://github.com/shubham7jain/pyrouge
+* sumy - https://github.com/shubham7jain/sumy
+
+Thanks to the respective owners of the repositories above for making their code open source.
+
+## HOW TO RUN THE EVALUATION ##
+Clone repository https://github.com/shubham7jain/sumy and do sh evaluation.sh
+
+## DIFFERENT PRODUCTS OF PRECIS ##
+
+### Backend Service ###
+
+Server - https://precis.herokuapp.com
+API Contract available at http://precis.herokuapp.com/apidocs/index.html
+
+### Website ###
+https://precis-webapp.herokuapp.com/
+
+### Chrome Extension ###
+Still in developer mode. Will publish it soon
