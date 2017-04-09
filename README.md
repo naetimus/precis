@@ -63,6 +63,10 @@ Thanks to the respective owners of the repositories above for making their code 
 ## HOW TO RUN THE EVALUATION ##
 Clone repository https://github.com/shubham7jain/sumy and do sh evaluation.sh
 
+DataSet we are using is taken from :-
+
+http://multiling.iit.demokritos.gr/pages/view/1532/task-mss-single-document-summarization-data-and-information
+
 ## DIFFERENT PRODUCTS OF PRECIS ##
 
 ### Backend Service ###
