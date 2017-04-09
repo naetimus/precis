@@ -80,3 +80,8 @@ https://precis-webapp.herokuapp.com/
 
 ### Chrome Extension ###
 Still in developer mode. Will publish it soon
+
+### References ###
+http://text-analytics101.rxnlp.com/2017/01/how-rouge-works-for-evaluation-of.html
+
+https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf
