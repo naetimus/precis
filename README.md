@@ -54,6 +54,18 @@ Following is the work that we want to complete if time permits:-
 | f555eee2cec40b01728b48738746d678 | 0.387755 | 0.367347 |
 | feedc24a067e279b75b5c9fbfea1dfd5 | 0.436364 | 0.351515 |
 
+Average scores against many other algorithms
+
+| ALGORITHMS | SCORE |
+|-----|----|
+| edmundson | 0.300956866667|
+| sum-basic | 0.314202633333 |
+| lex-rank | 0.327850166667 |
+| lsa | 0.346016833333 |
+| text-rank | 0.3477491 |
+| precis | 0.354453733333 |
+ 
+
 ## REPOSITORIES THAT OUR PROJECT USES FOR EVALUATION ##
 * pyrouge - https://github.com/shubham7jain/pyrouge
 * sumy - https://github.com/shubham7jain/sumy
