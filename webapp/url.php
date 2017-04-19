@@ -126,6 +126,10 @@
                   <span class="input-group-addon" id="sizing-addon1">URL:</span>
                   <input type="text" name="text" class="form-control" id="styled" placeholder="Paste your url and click Summarize.. " aria-describedby="sizing-addon1">
                </div>
+               <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1">Ratio:</span>
+                  <input type="text" name="text" class="form-control" id="styled" placeholder="Give a value from 0 to 1" aria-describedby="sizing-addon1">
+               </div>
                <script>
                   function clear_textarea() {
                      document.getElementById("styled").value = "";
