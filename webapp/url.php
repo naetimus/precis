@@ -51,7 +51,7 @@
             $.ajax({
                type: "POST",
                url: "https://precis.herokuapp.com/summaryurl",
-               data: JSON.stringify({'url': url, 'ratio': ratio}),
+               data: JSON.stringify({'url': url, 'ratio': parseFloat(ratio)}),
                // dataType: 'json',
                contentType: 'application/json; charset=UTF-8',
                success: function(data) {
