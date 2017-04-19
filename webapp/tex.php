@@ -46,6 +46,7 @@
         function myFunction() {
          document.getElementById("error").style.visibility = "hidden";
            var text = document.getElementById('styled').value
+           var ratio = document.getElementById('ratio').value
            document.getElementById("loading").style.visibility = "visible";
             $.ajax({
                type: "POST",
@@ -118,13 +119,21 @@
                   font-family: Tahoma, sans-serif;
                   }
                </style>
-               <textarea  name="text" placeholder="Paste your text article and click Summarize.. " id="styled"></textarea>
-               <script>
-                  function clear_textarea() {
-                     document.getElementById("styled").value = "";
-                  }
-                  
-               </script>
+               <div class="input-group input-group-lg">
+                  <span class="input-group-addon" id="sizing-addon1">Ratio:</span>
+                  <input type="text" name="ratio" class="form-control" id="ratio" placeholder="Give a value from 0 to 1" aria-describedby="sizing-addon1">
+               </div>
+               <br/>
+               <br/>
+               <div class="form-group">
+                   <textarea  class="form-control custom-control" name="text" placeholder="Paste your text article and click Summarize.. " id="styled" style="width:100%"></textarea>
+                   <script>
+                      function clear_textarea() {
+                         document.getElementById("styled").value = "";
+                      }
+
+                   </script>
+               </div>
                <br>
                <br>
                <input type="button" id="smm" value="Clear" class="button1" onclick="javascript:clear_textarea();">
