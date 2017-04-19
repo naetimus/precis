@@ -29,7 +29,6 @@ Average scores against many other algorithms
 | sum-basic | 0.314202633333 |
 | lex-rank | 0.327850166667 |
 | lsa | 0.346016833333 |
-| text-rank | 0.3477491 |
 | precis | 0.354453733333 |
  
 
