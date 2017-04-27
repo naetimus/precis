@@ -23,13 +23,12 @@ Following is the work that we want to complete if time permits:-
 
 Average scores against many other algorithms
 
-| ALGORITHMS | SCORE |
-|-----|----|
-| edmundson | 0.300956866667|
-| sum-basic | 0.314202633333 |
-| lex-rank | 0.327850166667 |
-| lsa | 0.346016833333 |
-| precis | 0.354453733333 |
+| ALGORITHMS | ROGUE-1 SCORE | ROGUE-2 SCORE | ROGUE-L SCORE(SENTENCE LEVEL) |
+|-----|----|----|----|
+| edmundson | 0.300956866667| 0.0916679333333 | 0.177563466667 | 
+| sum-basic | 0.314202633333 | 0.0848814666667 | 0.169243166667 | 
+| lex-rank | 0.327850166667 | 0.130914366667 | 0.187250466667 |
+| precis | 0.354453733333 | 0.130914366667 | 0.174810566667 |
  
 
 ## REPOSITORIES THAT OUR PROJECT USES FOR EVALUATION ##
